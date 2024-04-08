@@ -3,7 +3,8 @@
 - Python serial reads the data transmitted by stm32 uart.
 - STM32 transmits data when python sends a data flag through serial port.
 # STM32 Setup for LIS3MDL
-- The SCL pin in LIS3MDL is connected to PA5 in STM32.
+
+- The VCC pin in LIS3MDL is connected to 3.3V in STM32.
 - The SDO pin in LIS3MDL is connected to PA6 in STM32.
 - The SDA PIN in LIS3MDL is connected to PA7 in STM32.
 - The CS  PIN in LIS3MDL is connected to PB7 in STM32.
