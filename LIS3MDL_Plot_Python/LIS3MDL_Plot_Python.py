@@ -5,6 +5,9 @@ import matplotlib.pyplot as plt
 import serial
 from tqdm import trange
 
+port = "COM8"
+baudrate = 115200
+
 
 def lis3mdl_setup(port, baudrate):
     fs_4gauss = b"\x00"
@@ -53,8 +56,6 @@ def lis3mdl_period_read():
     Bz_end = b"\x31"
     size = 1000  # 10 samples
     rxData = np.zeros(8, dtype=np.uint8)
-    port = "COM9"
-    baudrate = 115200
     ser = serial.Serial(port, baudrate)
     if not ser.is_open:
         print("Serial port is not open.")
