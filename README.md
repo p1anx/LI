@@ -27,10 +27,10 @@
 
 # 4 ADS1256 PIN
 
-- SCLK   => PB13
-- DIN     => PB15
-- DOUT  => PB14
-- DRDY  => PA11
-- CS        => PA8
+- SCLK => PB13
+- DIN  => PB15
+- DOUT => PB14
+- DRDY => PA11
+- CS   => PA8
 - POWN => PA12
 
